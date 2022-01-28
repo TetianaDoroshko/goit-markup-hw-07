@@ -16,7 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/main.min.css" />
+    <!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
   </head>
   <body>
     <!-- Шапка -->
@@ -430,26 +431,24 @@
             </li>
           </ul>
         </div>
-        <div class="footer-sign-up">
-          <form class="form-sign-up">
-            <label class="form-sign-up__label" for="email">Подпишитесь на рассылку</label>
-            <div class="form-sign-up__wrap">
-              <input
-                class="form-sign-up__input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-              />
-              <button class="button form-sign-up__button" type="submit">
-                Подписаться
-                <svg class="form-sign-up__icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
+        <form class="form-sign-up footer__form-sign-up">
+          <label class="form-sign-up__label" for="email">Подпишитесь на рассылку</label>
+          <div class="form-sign-up__wrap">
+            <input
+              class="form-sign-up__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="button form-sign-up__button" type="submit">
+              Подписаться
+              <svg class="form-sign-up__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- Модальное окно -->

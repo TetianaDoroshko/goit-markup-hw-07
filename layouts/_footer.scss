@@ -1,0 +1,22 @@
+.footer {
+  color: var(--bgd-light);
+  background-color: var(--bgd-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container {
+  display: flex;
+}
+.footer__join-us {
+  margin-left: 70px;
+}
+.footer__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer__form-sign-up {
+  margin-left: auto;
+}

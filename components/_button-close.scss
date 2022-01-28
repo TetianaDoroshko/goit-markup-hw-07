@@ -1,0 +1,22 @@
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--bgd-light);
+  cursor: pointer;
+  transition: background-color var(--tr-duration) var(--tr-function),
+    fill var(--tr-duration) var(--tr-function);
+}
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--accent-color);
+}
