@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--bgd-dark);
+  background-color: $bgd-dark;
   text-align: center;
 }
 .hero__body {
@@ -15,19 +15,19 @@
   background-position: center;
 }
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
+  @include font-for-text(900, 44px, 1.36, 0.06em);
   text-transform: uppercase;
-  color: var(--bgd-light);
+  color: $bgd-light;
 
   width: 696px;
   margin: 0 auto 30px auto;
 }
-.hero__button:hover,
-.hero__button:focus {
-  color: var(--title-color);
-  background-color: var(--bgd-grey);
+
+.hero__button {
+  &:hover,
+  &:focus {
+    color: $title-color;
+    background-color: $bgd-grey;
+  }
 }

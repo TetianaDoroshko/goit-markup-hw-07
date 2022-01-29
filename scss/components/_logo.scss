@@ -1,0 +1,13 @@
+.logo {
+  font-family: $font-logo;
+  @include font-for-text(700, 26px, 1.19, null);
+  color: $accent-color;
+  text-decoration: none;
+}
+.logo__text {
+  color: #000000;
+
+  &--light {
+    color: $bgd-light;
+  }
+}

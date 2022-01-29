@@ -1,6 +1,6 @@
 .footer {
-  color: var(--bgd-light);
-  background-color: var(--bgd-dark);
+  color: $bgd-light;
+  background-color: $bgd-dark;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -11,9 +11,7 @@
   margin-left: 70px;
 }
 .footer__text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font-for-text(500, 14, 1.14, null);
   text-transform: uppercase;
   margin-bottom: 20px;
 }

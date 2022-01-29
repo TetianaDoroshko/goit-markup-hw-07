@@ -1,0 +1,29 @@
+.regular-button {
+  // font-family: Roboto, sans-serif;
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.62;
+  // text-align: center;
+  // letter-spacing: 0.03em;
+  // cursor: pointer;
+  padding: 6px 22px;
+  @include font-for-btn();
+  color: $title-color;
+  background-color: $bgd-grey;
+  border-color: transparent;
+  border-radius: 4px;
+  transition: background-color $tr-duration $tr-function, color $tr-duration $tr-function,
+    box-shadow $tr-duration $tr-function;
+
+  &--main {
+    color: $bgd-light;
+    background-color: $accent-color;
+    box-shadow: $shadow;
+  }
+  &:hover,
+  &:focus {
+    color: $bgd-light;
+    background-color: $accent-color;
+    box-shadow: $shadow;
+  }
+}

@@ -14,14 +14,15 @@
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--icon-color);
-  transition: border-color var(--tr-duration) var(--tr-function),
-    color var(--tr-duration) var(--tr-function);
-}
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  color: $icon-color;
+  @include transition(border-color);
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
 }
 .clients__icon {
   fill: currentColor;

@@ -8,9 +8,10 @@
 .features__item {
   width: calc((100% -90px) / 4);
   margin-right: 30px;
-}
-.features__item:last-child {
-  margin-right: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .features__icon {
   background-color: #f5f4fa;
@@ -21,12 +22,10 @@
   align-items: center;
 }
 .features__sub-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  color: $title-color;
+  @include font-for-text(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
-  color: var(--title-color);
+
   margin-top: 30px;
   margin-bottom: 10px;
 }

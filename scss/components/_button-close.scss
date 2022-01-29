@@ -11,12 +11,12 @@
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--bgd-light);
+  background-color: $bgd-light;
   cursor: pointer;
-  transition: background-color var(--tr-duration) var(--tr-function),
-    fill var(--tr-duration) var(--tr-function);
-}
-.close-btn:hover,
-.close-btn:focus {
-  fill: var(--accent-color);
+  transition: background-color $tr-duration $tr-function, fill $tr-duration $tr-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }

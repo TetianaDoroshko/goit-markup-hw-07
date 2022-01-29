@@ -1,0 +1,53 @@
+.card {
+  transition: box-shadow $tr-duration $tr-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card__vision {
+  position: relative;
+  overflow: hidden;
+}
+.card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: transform $tr-duration $tr-function;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: $bgd-light;
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: hidden;
+
+  .card:hover &,
+  .card:focus & {
+    transform: translateY(0);
+  }
+}
+
+.card__description {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.card__name {
+  color: $title-color;
+  @include font-for-text(700, 18px, 2, 0.06em);
+  margin-bottom: 4px;
+}
+.card__text {
+  color: $text-color;
+  @include font-for-text(null, 16px, 1.87, 0.03em);
+}

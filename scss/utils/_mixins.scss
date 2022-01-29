@@ -1,0 +1,28 @@
+@mixin font-for-btn(
+  $ff: $font-main,
+  $fw: 500,
+  $fs: 16px,
+  $lh: 1.62,
+  $ta: center,
+  $ls: 0.03em,
+  $c: pointer
+) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  text-align: $ta;
+  letter-spacing: $ls;
+  cursor: $c;
+}
+
+@mixin font-for-text($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin transition($property) {
+  transition: $property $tr-duration $tr-function;
+}

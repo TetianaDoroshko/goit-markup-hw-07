@@ -1,0 +1,32 @@
+.socio-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+}
+.socio-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $icon-color;
+  background-color: transparent;
+  transition: background-color $tr-duration $tr-function, color $tr-duration $tr-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $bgd-light;
+  }
+
+  &--dark-bgd {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $bgd-light;
+  }
+}
+.socio-list__icon {
+  fill: currentColor;
+}

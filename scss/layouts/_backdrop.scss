@@ -13,7 +13,7 @@
   visibility: 1;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.1);
-  transition: opacity 500ms var(--tr-function);
+  transition: opacity 500ms $tr-function;
 }
 .is-hidden {
   visibility: 0;

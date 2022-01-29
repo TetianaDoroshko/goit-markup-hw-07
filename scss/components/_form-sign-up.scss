@@ -1,9 +1,7 @@
 .form-sign-up__label {
   display: inline-block;
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font-for-text(500, 14px, 1.14, null);
   text-transform: uppercase;
 }
 .form-sign-up__wrap {
@@ -16,13 +14,8 @@
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: var(--bgd-dark);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  background-color: $bgd-dark;
+  @include font-for-text(400, 16px, 1.25, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
@@ -31,11 +24,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-dark;
+  }
 }
-.form-sign-up__button:hover,
-.form-sign-up__button:focus {
-  background-color: #188ce8;
-}
+
 .form-sign-up__icon {
   margin-left: 10px;
 }
